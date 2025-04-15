@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFrag Perfumes</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">UFrags'</div>
+        <a href="cart.html" class="text-sm font-semibold bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300">🛒 View Cart (<span id="cart-count">0</span>)</a>
+        <nav>
+            <div class="topnav">
+                <a href="#home">Home</a>
+                <a href="#shop">Shop Now</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <h1>Unleash Your <span style="color: black;">Essence</span></h1>
+        <p>Experience luxury scents crafted to perfection.</p>
+        <button onclick="location.href='#shop'">Shop Now</button>
+    </section>
+
+    <!-- BEST SELLERS Section -->
+    <div id="shop" class="product-grid">
+        <div class="product">
+            <img src="diorhi.png" alt="Perfume 1">
+            <h3>Dior Homme Intense</h3>
+            <p>₱7,000.00</p>
+            <button class="add-to-cart" data-id="dior123" data-name="Dior Homme Intense" data-price="7000" data-image="diorhi.png">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="swyi.jpg" alt="Perfume 2">
+            <h3>Emporio Armani Stronger With You</h3>
+            <p>₱7,995.00</p>
+            <button class="add-to-cart" data-id="armani456" data-name="Emporio Armani Stronger With You" data-price="7995" data-image="swyi.jpg">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="jpg.png" alt="Perfume 3">
+            <h3>Jean Paul Gaultier Le Male Elixir Parfum</h3>
+            <p>₱9,399.00</p>
+            <button class="add-to-cart" data-id="jpg789" data-name="Jean Paul Gaultier Le Male Elixir Parfum" data-price="9399" data-image="jpg.png">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- NEW ARRIVALS Section -->
+    <div class="product-grid">
+        <div class="product">
+            <img src="adg.png" alt="Perfume 4">
+            <h3>Giorgo Armani Acqua Di Gio</h3>
+            <p>₱3,899.00</p>
+            <button class="add-to-cart" data-id="adg001" data-name="Giorgo Armani Acqua Di Gio" data-price="3899" data-image="adg.png">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="aven.png" alt="Perfume 5">
+            <h3>Creed Aventus</h3>
+            <p>₱5,899.00</p>
+            <button class="add-to-cart" data-id="creed002" data-name="Creed Aventus" data-price="5899" data-image="aven.png">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="eflame.png" alt="Perfume 6">
+            <h3>Versace Eros Flame EDP</h3>
+            <p>₱5,295.00</p>
+            <button class="add-to-cart" data-id="versace003" data-name="Versace Eros Flame EDP" data-price="5295" data-image="eflame.png">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="santal.png" alt="Perfume 7">
+            <h3>Le Labo Santal 33</h3>
+            <p>₱6,750.00</p>
+            <button class="add-to-cart" data-id="lelabo004" data-name="Le Labo Santal 33" data-price="6750" data-image="santal.png">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="tmw.png" alt="Perfume 8">
+            <h3>Azzaro The Most Wanted Parfum</h3>
+            <p>₱9,399.00</p>
+            <button class="add-to-cart" data-id="azzaro005" data-name="Azzaro The Most Wanted Parfum" data-price="9399" data-image="tmw.png">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="sauvage.png" alt="Perfume 9">
+            <h3>Christian Dior Sauvage Elixir EDP</h3>
+            <p>₱10,499.00</p>
+            <button class="add-to-cart" data-id="sauvage006" data-name="Christian Dior Sauvage Elixir EDP" data-price="10499" data-image="sauvage.png">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="spice.png" alt="Perfume 10">
+            <h3>Viktor & Rolf Spicebomb Extreme EDP</h3>
+            <p>₱8,390.00</p>
+            <button class="add-to-cart" data-id="spice007" data-name="Viktor & Rolf Spicebomb Extreme EDP" data-price="8390" data-image="spice.png">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="tfoud.png" alt="Perfume 11">
+            <h3>Tom Ford Oud Wood</h3>
+            <p>₱16,999.00</p>
+            <button class="add-to-cart" data-id="tf008" data-name="Tom Ford Oud Wood" data-price="16999" data-image="tfoud.png">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="xer.png" alt="Perfume 12">
+            <h3>Xerjoff Erba Pura EDP</h3>
+            <p>₱22,539.00</p>
+            <button class="add-to-cart" data-id="xer009" data-name="Xerjoff Erba Pura EDP" data-price="22539" data-image="xer.png">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="valen.png" alt="Perfume 13">
+            <h3>Valentino Uomo Intense</h3>
+            <p>₱7,300.00</p>
+            <button class="add-to-cart" data-id="valentino010" data-name="Valentino Uomo Intense" data-price="7300" data-image="valen.png">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Welcome to UFrags', your premier online destination for exquisite fragrances. We curate a collection of exceptional scents, from timeless classics to contemporary niche creations, ensuring each embodies quality, craftsmanship, and artistry.</p>
+        <p>At UFrags', we believe fragrance is a powerful expression of individuality. Our passionate team is here to provide expert recommendations and personalized guidance, fostering a community where fragrance enthusiasts can connect and share their love for perfumery.</p>
+        <p>Based in the Philippines, we are committed to exceptional customer service, secure transactions, and a seamless shopping experience. Discover your signature scent with UFrags' today.</p>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="contact">
+        <footer>
+            <div class="footer-container">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="facebook.svg" alt="Facebook" width="24">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="twitter-x.svg" alt="Twitter" width="24">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="instagram.svg" alt="Instagram" width="24">
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 UFrag Perfumes | 
+                        <a href="terms.html">Terms & Conditions</a> | 
+                        <a href="privacy.html">Privacy Policy</a>
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <p>
+                        <img src="mail.svg" alt="Email Icon" width="16">
+                        <strong>Email:</strong> contact@ufragperfumes.com
+                    </p>
+                    <p>
+                        <img src="phone.svg" alt="Phone Icon" width="16">
+                        <strong>Phone:</strong> +63 924 2662 6275
+                    </p>
+                    <p>
+                        <img src="address.svg" alt="Address Icon" width="16">
+                        <strong>Address:</strong> Baguio City, Benguet
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Added to Cart Notification -->
+    <div id="added-to-cart-message" style="display: none; position: fixed; top: 20px; right: 20px; background: #4CAF50; color: white; padding: 15px; border-radius: 5px; z-index: 1000;">
+        Item added to cart!
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - UFrag Perfumes</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .checkout-btn {
+            background-color: #ccc;
+            cursor: not-allowed;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .checkout-btn.active {
+            background-color: #000;
+            cursor: pointer;
+            opacity: 1;
+        }
+        .purchase-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 400px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">UFrags'</div>
+        <a href="cart.html" class="text-sm font-semibold bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300">🛒 View Cart (<span id="cart-count">0</span>)</a>
+        <nav>
+            <div class="topnav">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#shop">Shop Now</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-8 px-4">
+        <h1 class="text-3xl font-bold mb-8">Your Shopping Cart</h1>
+        
+        <div id="cart-items-container">
+            <!-- Cart items will be inserted here by JavaScript -->
+        </div>
+
+        <div class="flex justify-end mt-8">
+            <button id="checkout-btn" class="checkout-btn text-white px-6 py-3 rounded transition duration-300">
+                Proceed to Checkout
+            </button>
+        </div>
+    </main>
+
+    <!-- Purchase Confirmation Modal -->
+    <div id="purchase-modal" class="purchase-modal">
+        <div class="modal-content">
+            <h2 class="text-2xl font-bold mb-4">Order Confirmed!</h2>
+            <p class="mb-6">Your fragrances are on their way. Thank you for shopping with UFrags'!</p>
+            <button id="continue-btn" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300">
+                Continue Shopping
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
